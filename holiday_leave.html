@@ -1,0 +1,60 @@
+<html>
+<head>
+<title>KCT HOSTELLERS LEAVE MANANGEMENT</title>
+<link href="../static/bootstrap_002.css" rel="stylesheet" type="text/css">
+<link href="../static/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="../static/styleForLogin.css" rel="stylesheet" type="text/css">
+<link href="../static/blue.css" rel="stylesheet" type="text/css">
+<link href="../static/font-awesome.css" rel="stylesheet" type="text/css">
+<script type="../static/text/javascript" src="jquery.js"></script>
+<script src="../static/menu.js" type="text/javascript"></script>
+    <style>
+        h3{
+            text-align:center;
+        }
+    </style>
+</head>
+<body>
+<div class="header_bg">
+<div class="container">
+   <div class="header">
+      <div class="logo">
+         <a><img src="../static/logo.png" alt=""></a>
+      </div>
+      <br>
+      <div class="h_menu">
+      <a id="touch-menu" class="mobile-menu" href="#">Menu</a>
+      <nav>
+      </nav><h1>HOLIDAY LEAVEFORM</h1>
+<br>
+<br>
+            <form method="post" action="/leave_db">
+       <p><h2>email:</h2><input type="text" name="email" pattern="[^ @]*@[^ @]*"><br></p>
+       <p><h2>Leaving Date:</h2><input type="date" name="ldate" min="2016-1-1"max="2030-12-31"><br></p>
+                 <p><h2>Leaving Time:</h2><input type="time" name="ltime" value=""></p>
+       <p><h2>Return Date: </h2><input type="date" name="rdate" min="2000-01-02"><br></p>
+              <p><h2>Return Time:</h2><input type="time" name="rtime" value=""></p>
+<p><h2>Leave Type:</h2><input list="lt" name="lt"><datalist id="lt">
+    <option value="OUTING">
+    <option value="STUDY LEAVE">
+    <option value="VACCATION">
+    <option value="WEEKEND">
+    <option value="COLLEGE WORK">
+  </datalist>
+</p>
+<p><h2>Reason:  </h2> <input type="text" name="reason" value="" placeholder="Type your reason here"></p>
+        <p class="submit"><input type="submit" name="commit" value="APPLY"></p>
+       </form>
+      </div>
+      <div class="clearfix"></div>
+   </div>
+      </div>
+      </div>
+   <div class="wrapperL">
+   <div class="containerL">
+      </DIV>
+
+   </div>
+
+</body>
+</html>
